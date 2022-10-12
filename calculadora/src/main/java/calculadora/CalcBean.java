@@ -53,5 +53,11 @@ public class CalcBean implements Serializable {
 		resultado = parametro1/parametro2;
 		return "";
 	}
+	
+	
+	public int testeada(int a){
+		a=a+200;
+		return a;
+	}
 
 }
