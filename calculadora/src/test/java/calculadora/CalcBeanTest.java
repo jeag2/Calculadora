@@ -30,7 +30,7 @@ public class CalcBeanTest {
 		CalcBean obj2 =new CalcBean(); 
 		int resultado = obj2.testeada(10);
 			
-		assertEquals(0,resultado);
+		assertEquals(210,resultado);
 	}
 
 

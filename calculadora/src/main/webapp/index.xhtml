@@ -4,23 +4,15 @@
     xmlns:p="http://primefaces.org/ui">
      
     <h:head>
-    <title>Calculadora aritmética</title>
+    <title>Calculadora</title>
     </h:head>
  
     <h:body>
       <h:form>
       <p:panelGrid class="ui-noborder">
-       <f:facet name="header">  
-            <p:row>  
-                <p:column style="font-weight: bold;">Introduce los parámetros</p:column>  
-                 <p:column style="font-weight: bold;"></p:column>  
-            </p:row>  
-        </f:facet>
-      
+   
        <p:row>  
-           <p:column>  
-               <h:outputLabel value="Parametro1: "/>
-            </p:column>  
+          
             <p:column>  
                 <p:inputNumber id="parametro1" value="#{calcBean.parametro1}">  
                     <p:ajax update="parametro1" />  
@@ -28,24 +20,21 @@
             </p:column>  
        </p:row>
        <p:row>  
-           <p:column>  
-               <h:outputLabel value="Parametro2: "/>
-            </p:column>  
+          
             <p:column>  
                 <p:inputNumber id="parametro2" value="#{calcBean.parametro2}">  
                     <p:ajax update="parametro2" />  
                 </p:inputNumber>  
             </p:column>  
-       </p:row>
-      
-        <p:row>  
-           <p:column>  
-             <h:commandButton value="Suma" action="#{calcBean.suma}"/>
-              <h:commandButton value="Resta" action="#{calcBean.resta}"/>
-             <h:commandButton value="Multiplicación" action="#{calcBean.multiplicacion}"/>
-              <h:commandButton value="División" action="#{calcBean.division}"/>
+            <p:column>  
+             <h:commandButton value="+" action="#{calcBean.suma}"/>
+              <h:commandButton value="-" action="#{calcBean.resta}"/>
+             <h:commandButton value="*" action="#{calcBean.multiplicacion}"/>
+              <h:commandButton value="/" action="#{calcBean.division}"/>
             </p:column>  
        </p:row>
+      
+       
       
        <p:row>  
            <p:column>  
