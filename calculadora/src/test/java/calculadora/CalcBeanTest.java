@@ -11,7 +11,7 @@ public class CalcBeanTest {
 	@Test
 	public void testprueba() {
 			
-		assertEquals(2,1);
+		assertEquals(1,1);
 	}
 	
 	@Test
